@@ -8,7 +8,7 @@ dockerpath=solo254/ap1
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run ap1 -image=https://hub.docker.com/repository/docker/solo254/ap1 --port=8080
+kubectl run ap1 --image=https://hub.docker.com/repository/docker/solo254/ap1 --port=8080
 
 # Step 3:
 # List kubernetes pods
