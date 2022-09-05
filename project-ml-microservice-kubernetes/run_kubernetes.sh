@@ -4,17 +4,16 @@
 
 # Step 1:
 # This is your Docker ID/path
-dockerpath=solo254/microservices_project
+dockerpath=solo254/ap1
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl create deployment hello-minikube --image=https://hub.docker.com/repository/docker/solo254/ap1
-kubectl expose deployment hello-minikube --type=NodePort --port=8080
+kubectl run ap1 -image=https://hub.docker.com/repository/docker/solo254/ap1 --port=8080
 
 # Step 3:
 # List kubernetes pods
-kubectl get services hello-minikube
+kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward service/hello-minikube 8000:80
+kubectl port-forward ap1 8000:80
