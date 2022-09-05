@@ -8,7 +8,7 @@ dockerpath=solo254/microservices_project
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl create deployment hello-minikube --image=
+kubectl create deployment hello-minikube --image=https://hub.docker.com/repository/docker/solo254/ap1
 kubectl expose deployment hello-minikube --type=NodePort --port=8080
 
 # Step 3:
