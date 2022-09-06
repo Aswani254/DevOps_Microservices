@@ -1,3 +1,4 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Babawale/Project_4_Operationalize_ML_API/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Babawale/Project_4_Operationalize_ML_API/tree/master)
 
 ## Project Overview
 
