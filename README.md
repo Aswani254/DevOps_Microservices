@@ -1,4 +1,4 @@
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Babawale/Project_4_Operationalize_ML_API/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Babawale/Project_4_Operationalize_ML_API/tree/master)
+[![CircleCI](https://app.circleci.com/pipelines/github/contagion1/DevOps_Microservices?branch=master.svg?style=svg)](https://app.circleci.com/pipelines/github/contagion1/DevOps_Microservices/20/workflows/ce7ca443-9698-4058-802e-e841c3547643)
 
 ## Project Overview
 
