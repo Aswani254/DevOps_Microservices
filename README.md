@@ -4,7 +4,7 @@
 
 This project operationalizes a Machine Learning Microservice API. 
 
-Given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+Given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.A good use case would be image recognition models in tensorflow
 
 ### Project Tasks
 
@@ -32,12 +32,23 @@ source .devops/bin/activate
 ### Running `app.py`
 
 1. Standalone:  `python app.py`
+### Docker installation:
+* install docker desktop from https://docs.docker.com/engine/install/
+*Optionally on windows install WSL 2.0 using steps here: https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers
+*run the script below:
 2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
+*Push image to dockerhub :./upload_docker.sh 
+Finally make a prediction;run:make_prediction.sh
 
 ### Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+## Setup and Configure Kubernetes locally:
+*install vbox hypervisor: sudo apt install virtualbox virtualbox-ext-packCopied!
+*wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+*optionally check version: minikube version
+*install kubectl curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+*On window follow instructions at: https://minikube.sigs.k8s.io/docs/start/
+* Run via kubectl as below:
+3. Run in Kubernetes:  `./run_kubernetes.sh`
+
+*make prediction: ./make_prediction.sh
