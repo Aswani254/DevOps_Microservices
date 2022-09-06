@@ -4,6 +4,7 @@
 # Dockerfile should pass hadolint
 # app.py should pass pylint
 # (Optional) Build a simple integration test
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Aswani/DevOps_Microservices/tree/master.svg?style=svg)](https://app.circleci.com/pipelines/github/contagion1/DevOps_Microservices?branch=master)
 
 setup:
 	# Create python virtualenv & source it
