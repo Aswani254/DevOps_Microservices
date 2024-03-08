@@ -14,11 +14,10 @@ Given a pre-trained, `sklearn` model that has been trained to predict housing pr
 * Improve the log statements in the source code
 * Configure Kubernetes and create a Kubernetes cluster
 * Deploy a container using Kubernetes and make a prediction
-* Upload a complete Github repo with CircleCI to indicate that your code has been tested
 
 ## Setup the Environment
 
-* Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv. 
+* Create a virtualenv with Python 3.7 and activate it. 
 ```bash
 python3 -m pip install --user virtualenv
 # You should have Python 3.7 available in your host. 
